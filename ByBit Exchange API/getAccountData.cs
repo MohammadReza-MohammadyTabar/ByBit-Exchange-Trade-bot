@@ -10,6 +10,7 @@ namespace ByBit_Exchange_API
     public class getAccountData : IGetAccountData
     {
         private static IByBitClient _client;
+        
         public getAccountData(IByBitClient bybitClient)
         {
             _client = bybitClient;
@@ -18,6 +19,7 @@ namespace ByBit_Exchange_API
         public async Task<WebCallResult<Dictionary<string, BybitBalance>>> getBalanceAsync()
         {
 
+            
             return await _client.RegisterClient().UsdPerpetualApi.Account.GetBalancesAsync();
         }
 

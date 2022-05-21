@@ -15,11 +15,15 @@ namespace ByBit_Exchange_API
         private static IByBitClient _client;
         private static IPlaceOrder _placeOrder;
         private static PlaceOrderController _placeOrderController;
-        public getKline(IByBitClient bybitClient,IPlaceOrder placeOrder, PlaceOrderController placeOrderController)
+        private static IGetAccountData _getAccountData;
+
+        public string symbol = "DYDXUSDT";
+        public getKline(IByBitClient bybitClient,IPlaceOrder placeOrder, PlaceOrderController placeOrderController,IGetAccountData getAccountData)
         {
             _placeOrderController = placeOrderController;
             _placeOrder = placeOrder;
             _client = bybitClient;
+            _getAccountData = getAccountData;
         }
 
         public async Task<IEnumerable<SuperTrendResult>> getKlineAsync()
@@ -28,7 +32,7 @@ namespace ByBit_Exchange_API
             TimeSpan date = timeStamp.Data.TimeOfDay;
             DateTime d = DateTime.UtcNow.AddHours(-16.6666);//addmiutes(200 * -5)
             var result = _client.RegisterClient().UsdPerpetualApi.ExchangeData.GetKlinesAsync(
-                "DYDXUSDT",
+                symbol,
                 Bybit.Net.Enums.KlineInterval.FiveMinutes, 
                 d);
             //////////////////////get indicator signals
@@ -56,7 +60,7 @@ namespace ByBit_Exchange_API
             if (last2.LowerBand == null && last.UpperBand == null)
             {
                 decimal tp = kline.LastOrDefault<BybitKline>().ClosePrice + kline.LastOrDefault<BybitKline>().ClosePrice * ((kline.LastOrDefault<BybitKline>().ClosePrice - last.LowerBand.Value) / last.LowerBand.Value);
-                await _placeOrder.placeOrderAsync(false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), 50, false);
+                await _placeOrder.placeOrderAsync(symbol,false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), 50, false);
                 Console.WriteLine("sell     stop loss = " + last.LowerBand.ToString()+ "take profit = "+ tp);
 
             }
@@ -64,7 +68,7 @@ namespace ByBit_Exchange_API
             else if (last2.UpperBand == null && last.LowerBand == null)
             {
                 decimal tp = kline.LastOrDefault<BybitKline>().ClosePrice + kline.LastOrDefault<BybitKline>().ClosePrice * ((kline.LastOrDefault<BybitKline>().ClosePrice - last.UpperBand.Value) / last.UpperBand.Value);
-                await _placeOrder.placeOrderAsync(false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), 50, false);
+                await _placeOrder.placeOrderAsync(symbol,false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), 50, false);
                 Console.WriteLine("buy      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);
 
             }

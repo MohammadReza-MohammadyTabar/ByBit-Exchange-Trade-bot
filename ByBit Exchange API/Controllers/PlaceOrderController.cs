@@ -20,10 +20,10 @@ namespace ByBit_Exchange_API.Controllers
             
             _placeOrder = placeOrder;
         }
-        [HttpGet("{orderSide:bool}/{stopLoss:decimal}/{takeProfit:decimal}/{quantity:decimal}/{reduceOnly?}")]
-        public Task<WebCallResult<BybitUsdPerpetualOrder>> PlaceOrder(bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly )
+        [HttpGet("{symbol}/{orderSide:bool}/{stopLoss:decimal}/{takeProfit:decimal}/{quantity:decimal}/{reduceOnly?}")]
+        public Task<WebCallResult<BybitUsdPerpetualOrder>> PlaceOrder(string symbol,bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly )
         {
-            var result = _placeOrder.placeOrderAsync(orderSide, stopLoss, takeProfit, quantity, reduceOnly);
+            var result = _placeOrder.placeOrderAsync(symbol,orderSide, stopLoss, takeProfit, quantity, reduceOnly);
             return result;
         }
 

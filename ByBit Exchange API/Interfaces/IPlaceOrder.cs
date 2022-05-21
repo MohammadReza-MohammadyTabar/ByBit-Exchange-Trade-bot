@@ -9,7 +9,7 @@ namespace ByBit_Exchange_API.Interfaces
 {
     public interface IPlaceOrder
     {
-        public Task<WebCallResult<BybitUsdPerpetualOrder>> placeOrderAsync(bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly);
+        public Task<WebCallResult<BybitUsdPerpetualOrder>> placeOrderAsync(string symbol,bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly);
 
     }
 }

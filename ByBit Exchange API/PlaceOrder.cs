@@ -15,16 +15,17 @@ namespace ByBit_Exchange_API
             _client = bybitClient;
 
         }
-        public async Task<WebCallResult<BybitUsdPerpetualOrder>> placeOrderAsync(bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly = false)
+        public async Task<WebCallResult<BybitUsdPerpetualOrder>> placeOrderAsync(string symbol,bool orderSide, decimal stopLoss, decimal takeProfit, decimal quantity, bool reduceOnly = false)
         {
 
-
+            //orderside=true =>buy
+            //orderside=false =>sell
             var _orderside = Bybit.Net.Enums.OrderSide.Buy;
             if (orderSide == false)
                 _orderside = Bybit.Net.Enums.OrderSide.Sell;
 
             var result = await _client.RegisterClient().UsdPerpetualApi.Trading.PlaceOrderAsync(
-                    "DYDXUSDT",
+                    symbol,
                     _orderside,
                     Bybit.Net.Enums.OrderType.Market,
                     quantity:quantity,
