@@ -100,3 +100,54 @@ C:\Users\MAXELL\Desktop\New folder\ByBit Exchange API\ByBit Exchange API\ByBit E
 C:\Users\MAXELL\Desktop\New folder\ByBit Exchange API\ByBit Exchange API\ByBit Exchange API\obj\Debug\net5.0\ref\ByBit Exchange API.dll
 C:\Users\MAXELL\Desktop\New folder\ByBit Exchange API\ByBit Exchange API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.pdb
 C:\Users\MAXELL\Desktop\New folder\ByBit Exchange API\ByBit Exchange API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.genruntimeconfig.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\appsettings.json
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.exe
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.deps.json
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.runtimeconfig.json
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.runtimeconfig.dev.json
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ref\ByBit Exchange API.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\ByBit Exchange API.pdb
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Autofac.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Bybit.Net.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\CryptoExchange.Net.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.Mvc.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.Razor.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.Helpers.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.WebPages.Deployment.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.WebPages.Razor.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\System.Web.WebPages.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Microsoft.Web.Infrastructure.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.AspNetCore.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Extensions.Hosting.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Extensions.Logging.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Formatting.Compact.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Settings.Configuration.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Sinks.Console.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Sinks.Debug.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Serilog.Sinks.File.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Skender.Stock.Indicators.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.csproj.AssemblyReference.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.AssemblyInfoInputs.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.AssemblyInfo.cs
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.csproj.CoreCompileInputs.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\staticwebassets\ByBit Exchange API.StaticWebAssets.Manifest.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\staticwebassets\ByBit Exchange API.StaticWebAssets.xml
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\scopedcss\bundle\ByBit Exchange API.styles.css
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.RazorTargetAssemblyInfo.cache
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.csproj.CopyComplete
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ref\ByBit Exchange API.dll
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.pdb
+C:\Users\MAXELL\Source\Repos\maxell-77\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.genruntimeconfig.cache

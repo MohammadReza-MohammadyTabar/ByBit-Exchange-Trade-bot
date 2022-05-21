@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace ByBit_Exchange_API.Interfaces
 {
-    public interface IgetBalance
+    public interface IGetAccountData
     {
         public Task<WebCallResult<Dictionary<string, BybitBalance>>> getBalanceAsync();
+        public Task<WebCallResult<IEnumerable<BybitPositionUsd>>> GetPositionsAsync();
+        public Task<WebCallResult<IEnumerable<BybitPositionUsd>>> GetPositionAsync(string symbol);
     }
 }

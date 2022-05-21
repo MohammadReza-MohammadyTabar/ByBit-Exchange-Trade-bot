@@ -37,7 +37,7 @@ namespace ByBit_Exchange_API
 
             services.AddScoped<IGetKline, getKline>();
             services.AddScoped<IByBitClient, ByBitClient>();
-            services.AddScoped<IgetBalance, getBalance>();
+            services.AddScoped<Interfaces.IGetAccountData, getAccountData>();
             services.AddScoped<IPlaceOrder, PlaceOrder>();
             services.AddScoped<ICancelOrder, CancelOrder>();
             services.AddControllers().AddControllersAsServices();
