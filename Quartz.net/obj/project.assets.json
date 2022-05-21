@@ -737,11 +737,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
+      "projectUniqueName": "C:\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
       "projectName": "Quartz.net",
-      "projectPath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
+      "projectPath": "C:\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
       "packagesPath": "C:\\Users\\MAXELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\Quartz.net\\obj\\",
+      "outputPath": "C:\\ByBit-Exchange-API\\Quartz.net\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

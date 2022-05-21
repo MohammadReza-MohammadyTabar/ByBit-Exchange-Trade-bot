@@ -1245,11 +1245,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
+      "projectUniqueName": "C:\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
       "projectName": "ByBit Exchange API",
-      "projectPath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
+      "projectPath": "C:\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
       "packagesPath": "C:\\Users\\MAXELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\ByBit Exchange API\\obj\\",
+      "outputPath": "C:\\ByBit-Exchange-API\\ByBit Exchange API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

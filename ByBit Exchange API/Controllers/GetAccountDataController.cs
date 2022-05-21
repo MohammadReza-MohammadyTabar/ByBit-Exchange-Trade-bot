@@ -16,7 +16,7 @@ namespace ByBit_Exchange_API.Controllers
         {
             _getAccountData = getAccountData;
         }
-        [HttpGet("getBalance")]
+        [HttpGet]
         public Task<WebCallResult<Dictionary<string, BybitBalance>>> getBalance()
         {
             return _getAccountData.getBalanceAsync();

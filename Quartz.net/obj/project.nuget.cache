@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E4f/GaPDoGfr5+ADQmSU06dqMoNqu1NdPgGanpt1Sr5IdTnzoMdm6bkPvBEqIlCSHMaLxM3N28MtmivrKuC93A==",
+  "dgSpecHash": "RrPxoyjYFFgw5dFZboM9UXEStNtu9zNJxePXmFVoVic/ozKsGmojSNpWFPSxzvFJB7DDGcxYwdQc7mkfh5Om1A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
+  "projectFilePath": "C:\\ByBit-Exchange-API\\Quartz.net\\Quartz.net.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXELL\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\MAXELL\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.1.1\\microsoft.extensions.logging.abstractions.2.1.1.nupkg.sha512",

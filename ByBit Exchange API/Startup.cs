@@ -40,6 +40,7 @@ namespace ByBit_Exchange_API
             services.AddScoped<IGetAccountData, getAccountData>();
             services.AddScoped<IPlaceOrder, PlaceOrder>();
             services.AddScoped<ICancelOrder, CancelOrder>();
+            services.AddScoped<IClosePositions, ClosePositions>();
             services.AddControllers().AddControllersAsServices();
 
         }

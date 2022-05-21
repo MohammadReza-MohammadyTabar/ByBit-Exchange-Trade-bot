@@ -1,11 +1,7 @@
-﻿using Bybit.Net.Objects.Models;
-using ByBit_Exchange_API.Interfaces;
-using CryptoExchange.Net.Objects;
+﻿using ByBit_Exchange_API.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Skender.Stock.Indicators;
-using System;
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 namespace ByBit_Exchange_API.Controllers
 {
@@ -20,11 +16,11 @@ namespace ByBit_Exchange_API.Controllers
             
         }
 
-        [HttpGet("getKline")]
-        public Task<IEnumerable<SuperTrendResult>> getKline()
+        [HttpGet("getKline/{symbol?}/{quantity?}")]
+        public Task<IEnumerable<SuperTrendResult>> GetTest(string symbol="DYDXUSDT",decimal quantity=50)
         {
             
-            var kline = _getKline.getKlineAsync();            
+            var kline = _getKline.getKlineAsync(symbol,quantity);            
             return kline;
         }
        

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MyDHam6c/FEdsspLnoGQM3QecKZJUjXiLnr6TgmwPVtPCV5YztT+8Bm5cgtg8Nhy1BpJ7IcmVmiq656HtoqoRw==",
+  "dgSpecHash": "HpFGX3MKUPU24xG6jxUJcYzVLcfcKuXlYWt4X21df4zPMhcYfte2e4KWu0M8DC8ApqsPwqAFZZzTE1hWf7XSdA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MAXELL\\Source\\Repos\\maxell-77\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
+  "projectFilePath": "C:\\ByBit-Exchange-API\\ByBit Exchange API\\ByBit Exchange API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MAXELL\\.nuget\\packages\\autofac\\6.3.0\\autofac.6.3.0.nupkg.sha512",
     "C:\\Users\\MAXELL\\.nuget\\packages\\bybit.net\\1.0.0\\bybit.net.1.0.0.nupkg.sha512",
