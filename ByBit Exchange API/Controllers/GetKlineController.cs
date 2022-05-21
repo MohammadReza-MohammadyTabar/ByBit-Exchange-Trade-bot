@@ -11,17 +11,17 @@ namespace ByBit_Exchange_API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class GetKlineController : ControllerBase
     {
         private static IGetKline _getKline;
-        public WeatherForecastController(IGetKline getKline)
+        public GetKlineController(IGetKline getKline)
         {
             _getKline = getKline;
             
         }
 
-        [HttpGet]
-        public Task<IEnumerable<SuperTrendResult>> GetTest()
+        [HttpGet("getKline")]
+        public Task<IEnumerable<SuperTrendResult>> getKline()
         {
             
             var kline = _getKline.getKlineAsync();            
