@@ -36,7 +36,7 @@ namespace ByBit_Exchange_API
             //cancelling sell positon and orders
             else if (postions.Data.ElementAtOrDefault(1).Quantity != 0)
             {
-                var resault = await _placeOrder.placeOrderAsync(symbol, false, 0, 0, postions.Data.ElementAtOrDefault(1).Quantity, true);
+                var resault = await _placeOrder.placeOrderAsync(symbol, true, 0, 0, postions.Data.ElementAtOrDefault(1).Quantity, true);
                 var resault2 = await _cancelOrder.CancelAllOrders(symbol);
                 return resault.Success && resault2.Success;
             }

@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ByBit Exchange API"
   ],
-  "SelectedNode": "\\ByBit Exchange API.sln",
+  "SelectedNode": "\\ByBit Exchange API\\getKline.cs",
   "PreviewInSolutionExplorer": false
 }

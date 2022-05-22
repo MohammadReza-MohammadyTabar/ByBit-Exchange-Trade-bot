@@ -57,14 +57,14 @@ namespace ByBit_Exchange_API
             int count = results.Count();
             var last = results.LastOrDefault<SuperTrendResult>();
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
-
+            
             //buy signal 
             if (last2.LowerBand == null && last.UpperBand == null)
             {
-                if (await _closePositions.closePosition(symbol) == true)
+                if (await _closePositions.closePosition(symbol))
                 {
                     decimal tp = kline.LastOrDefault<BybitKline>().ClosePrice + kline.LastOrDefault<BybitKline>().ClosePrice * ((kline.LastOrDefault<BybitKline>().ClosePrice - last.LowerBand.Value) / last.LowerBand.Value);
-                    await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: quantity, false);
+                    await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: quantity, false);
                     Console.WriteLine("sell     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
                 }
 
@@ -72,7 +72,7 @@ namespace ByBit_Exchange_API
             //sell signal
             else if (last2.UpperBand == null && last.LowerBand == null)
             {
-                if (await _closePositions.closePosition(symbol) == true)
+                if (await _closePositions.closePosition(symbol))
                 {
                     decimal tp = kline.LastOrDefault<BybitKline>().ClosePrice + kline.LastOrDefault<BybitKline>().ClosePrice * ((kline.LastOrDefault<BybitKline>().ClosePrice - last.UpperBand.Value) / last.UpperBand.Value);
                     await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:quantity, false);
