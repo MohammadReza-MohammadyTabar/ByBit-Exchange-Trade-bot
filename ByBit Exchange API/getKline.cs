@@ -53,7 +53,7 @@ namespace ByBit_Exchange_API
                 };
                 quotes.Add(q);
             }
-            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(12, 3);
+            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(12, 1.5);
             int count = results.Count();
             var last = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 3);
