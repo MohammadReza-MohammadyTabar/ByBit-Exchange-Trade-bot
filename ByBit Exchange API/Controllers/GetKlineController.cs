@@ -16,11 +16,11 @@ namespace ByBit_Exchange_API.Controllers
             
         }
 
-        [HttpGet("getKline/{symbol?}/{quantity?}")]
-        public Task<IEnumerable<SuperTrendResult>> GetTest(string symbol="DYDXUSDT",decimal quantity=50)
+        [HttpGet("getKline/{symbol?}/{quantityPercent?}")]
+        public Task<IEnumerable<SuperTrendResult>> GetTest(string symbol="DYDXUSDT",decimal quantityPercent = 1)
         {
             
-            var kline = _getKline.getKlineAsync(symbol,quantity);            
+            var kline = _getKline.getKlineAsync(symbol, quantityPercent);            
             return kline;
         }
        

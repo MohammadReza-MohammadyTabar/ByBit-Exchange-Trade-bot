@@ -36,7 +36,7 @@
           "Autofac": "6.3.0",
           "Bybit.Net": "1.0.0",
           "CryptoExchange.Net": "5.1.7",
-          "Microsoft.AspNet.Mvc": "5.2.8",
+          "EmailService": "1.0.0",
           "Serilog.AspNetCore": "5.0.0",
           "Skender.Stock.Indicators": "1.23.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -375,62 +375,6 @@
           "lib/netstandard2.1/CryptoExchange.Net.dll": {}
         }
       },
-      "Microsoft.AspNet.Mvc/5.2.8": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.8",
-          "Microsoft.AspNet.WebPages": "3.2.8"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Mvc.dll": {
-            "assemblyVersion": "5.2.8.0",
-            "fileVersion": "5.2.34876.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Mvc.dll": {}
-        }
-      },
-      "Microsoft.AspNet.Razor/3.2.8": {
-        "runtime": {
-          "lib/net45/System.Web.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.34876.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Razor.dll": {}
-        }
-      },
-      "Microsoft.AspNet.WebPages/3.2.8": {
-        "dependencies": {
-          "Microsoft.AspNet.Razor": "3.2.8",
-          "Microsoft.Web.Infrastructure": "1.0.0"
-        },
-        "runtime": {
-          "lib/net45/System.Web.Helpers.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.34876.0"
-          },
-          "lib/net45/System.Web.WebPages.Deployment.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.34876.0"
-          },
-          "lib/net45/System.Web.WebPages.Razor.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.34876.0"
-          },
-          "lib/net45/System.Web.WebPages.dll": {
-            "assemblyVersion": "3.0.0.0",
-            "fileVersion": "3.0.34876.0"
-          }
-        },
-        "compile": {
-          "lib/net45/System.Web.Helpers.dll": {},
-          "lib/net45/System.Web.WebPages.Deployment.dll": {},
-          "lib/net45/System.Web.WebPages.Razor.dll": {},
-          "lib/net45/System.Web.WebPages.dll": {}
-        }
-      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Configuration/2.0.0": {
         "dependencies": {
@@ -513,17 +457,6 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {}
-        }
-      },
-      "Microsoft.Web.Infrastructure/1.0.0": {
-        "runtime": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.20105.407"
-          }
-        },
-        "compile": {
-          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -735,6 +668,14 @@
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {},
       "System.Text.Json/4.6.0": {},
+      "EmailService/1.0.0": {
+        "runtime": {
+          "EmailService.dll": {}
+        },
+        "compile": {
+          "EmailService.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2462,27 +2403,6 @@
       "path": "cryptoexchange.net/5.1.7",
       "hashPath": "cryptoexchange.net.5.1.7.nupkg.sha512"
     },
-    "Microsoft.AspNet.Mvc/5.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-LDpC42O51MIVQht4aHEC/Nq6bpRiM+Z2jtZT2KkugB6dIJqMbvW9E74CxiBeJjRWDJGFOUq2Fzuo+THil0TIbg==",
-      "path": "microsoft.aspnet.mvc/5.2.8",
-      "hashPath": "microsoft.aspnet.mvc.5.2.8.nupkg.sha512"
-    },
-    "Microsoft.AspNet.Razor/3.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-kbWyeKmtRKhaAdutZdTwy60C2YoMw6JykV7qL+idvAo19VvcOzBZyiBFGQnmSbzOf/qoznvrWjPJi6+oOsS0Vw==",
-      "path": "microsoft.aspnet.razor/3.2.8",
-      "hashPath": "microsoft.aspnet.razor.3.2.8.nupkg.sha512"
-    },
-    "Microsoft.AspNet.WebPages/3.2.8": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uPscsoHcoYUOLyitrnxsK5Ch1MMemvthnmItJCdzWeDQKGtE3pgki5CS+AiYrzIc0tP6AgwBD+xox2lp+7Z5WA==",
-      "path": "microsoft.aspnet.webpages/3.2.8",
-      "hashPath": "microsoft.aspnet.webpages.3.2.8.nupkg.sha512"
-    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2587,13 +2507,6 @@
       "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
-    },
-    "Microsoft.Web.Infrastructure/1.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
-      "path": "microsoft.web.infrastructure/1.0.0",
-      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
@@ -2713,6 +2626,11 @@
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "EmailService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",

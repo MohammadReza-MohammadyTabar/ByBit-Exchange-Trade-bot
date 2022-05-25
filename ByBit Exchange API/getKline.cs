@@ -30,7 +30,7 @@ namespace ByBit_Exchange_API
             _closePositions = closePositions;
         }
 
-        public async Task<IEnumerable<SuperTrendResult>> getKlineAsync(string symbol, decimal quantity)
+        public async Task<IEnumerable<SuperTrendResult>> getKlineAsync(string symbol, decimal quantityPercent)
         {
             //var timeStamp = await _client.RegisterClient().UsdPerpetualApi.ExchangeData.GetServerTimeAsync();
             //TimeSpan date = timeStamp.Data.TimeOfDay;
@@ -59,16 +59,15 @@ namespace ByBit_Exchange_API
             int count = results.Count();
             var last = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 3);
-            
-            //var balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0);
-            //decimal qtty = balance.FirstOrDefault<BybitBalance>("USDT").AvailableBalance;
             //buy signal 
             if (last2.LowerBand == null && last.UpperBand == null)
             {
                 if (await _closePositions.closePosition(symbol))
                 {
+
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count -2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.LowerBand.Value) / last.LowerBand.Value);
-                    await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: quantity, false);
+                    decimal qtty = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice;
+                    await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: qtty.WithDecimalDigitsOf(0), false);
                     SendEmail email = new SendEmail(toEmailAddress, "buy position opend", DateTime.Now.ToString() + "\n buy \n stop loss =" + last.LowerBand.ToString() + "take profit = " + tp);
                     Console.WriteLine("buy     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
                 }
@@ -80,7 +79,8 @@ namespace ByBit_Exchange_API
                 if (await _closePositions.closePosition(symbol))
                 {
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.UpperBand.Value) / last.UpperBand.Value);
-                    await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:quantity, false);
+                    decimal qtty = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice;
+                    await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:qtty.WithDecimalDigitsOf(0), false);
                     SendEmail email = new SendEmail(toEmailAddress, "sell position opend", DateTime.Now.ToString() + "\n sell \n stop loss =" + last.UpperBand.ToString() + "take profit = " + tp);
                     Console.WriteLine("sell      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);
                 }

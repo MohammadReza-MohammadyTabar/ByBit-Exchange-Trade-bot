@@ -10,6 +10,6 @@ namespace ByBit_Exchange_API.Interfaces
 {
     public interface IGetKline
     {
-        public Task<IEnumerable<SuperTrendResult>> getKlineAsync(string symbol , decimal quantity);
+        public Task<IEnumerable<SuperTrendResult>> getKlineAsync(string symbol , decimal quantityPercent);
     }
 }

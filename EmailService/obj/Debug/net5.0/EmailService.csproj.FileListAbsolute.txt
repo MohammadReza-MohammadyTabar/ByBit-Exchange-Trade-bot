@@ -1,0 +1,11 @@
+C:\ByBit-Exchange-API\EmailService\bin\Debug\net5.0\EmailService.deps.json
+C:\ByBit-Exchange-API\EmailService\bin\Debug\net5.0\EmailService.dll
+C:\ByBit-Exchange-API\EmailService\bin\Debug\net5.0\ref\EmailService.dll
+C:\ByBit-Exchange-API\EmailService\bin\Debug\net5.0\EmailService.pdb
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.AssemblyInfoInputs.cache
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.AssemblyInfo.cs
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.csproj.CoreCompileInputs.cache
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.dll
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\ref\EmailService.dll
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.pdb
