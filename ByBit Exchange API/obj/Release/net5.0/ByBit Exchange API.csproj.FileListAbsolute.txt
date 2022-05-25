@@ -42,3 +42,49 @@ C:\bybit api\ByBit Exchange API\ByBit Exchange API\obj\Release\net5.0\ref\ByBit 
 C:\bybit api\ByBit Exchange API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.pdb
 C:\bybit api\ByBit Exchange API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.genruntimeconfig.cache
 C:\bybit api\ByBit Exchange API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.csproj.AssemblyReference.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\appsettings.Development.json
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\appsettings.json
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.exe
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.deps.json
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.runtimeconfig.json
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.runtimeconfig.dev.json
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ref\ByBit Exchange API.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\ByBit Exchange API.pdb
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Autofac.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Bybit.Net.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\CryptoExchange.Net.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Microsoft.OpenApi.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Newtonsoft.Json.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.AspNetCore.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Extensions.Hosting.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Extensions.Logging.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Formatting.Compact.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Settings.Configuration.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Sinks.Console.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Sinks.Debug.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Serilog.Sinks.File.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Skender.Stock.Indicators.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.csproj.AssemblyReference.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.GeneratedMSBuildEditorConfig.editorconfig
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.AssemblyInfoInputs.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.AssemblyInfo.cs
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.csproj.CoreCompileInputs.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.MvcApplicationPartsAssemblyInfo.cs
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.MvcApplicationPartsAssemblyInfo.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\staticwebassets\ByBit Exchange API.StaticWebAssets.Manifest.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\staticwebassets\ByBit Exchange API.StaticWebAssets.xml
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\scopedcss\bundle\ByBit Exchange API.styles.css
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.RazorTargetAssemblyInfo.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.csproj.CopyComplete
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ref\ByBit Exchange API.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.pdb
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.genruntimeconfig.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\EmailService.dll
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\EmailService.pdb

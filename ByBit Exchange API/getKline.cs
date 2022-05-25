@@ -7,6 +7,7 @@ using Skender.Stock.Indicators;
 using System.Linq;
 using System.IO;
 using ByBit_Exchange_API.Controllers;
+using EmailService;
 
 namespace ByBit_Exchange_API
 {
@@ -17,8 +18,9 @@ namespace ByBit_Exchange_API
         private static PlaceOrderController _placeOrderController;
         private static IGetAccountData _getAccountData;
         private static IClosePositions _closePositions;
+        private string toEmailAddress = "mohammady444@gmail.com";
 
-        
+
         public getKline(IByBitClient bybitClient,IPlaceOrder placeOrder, PlaceOrderController placeOrderController,IGetAccountData getAccountData,IClosePositions closePositions)
         {
             _placeOrderController = placeOrderController;
@@ -30,8 +32,8 @@ namespace ByBit_Exchange_API
 
         public async Task<IEnumerable<SuperTrendResult>> getKlineAsync(string symbol, decimal quantity)
         {
-            var timeStamp = await _client.RegisterClient().UsdPerpetualApi.ExchangeData.GetServerTimeAsync();
-            TimeSpan date = timeStamp.Data.TimeOfDay;
+            //var timeStamp = await _client.RegisterClient().UsdPerpetualApi.ExchangeData.GetServerTimeAsync();
+            //TimeSpan date = timeStamp.Data.TimeOfDay;
             DateTime d = DateTime.UtcNow.AddHours(-16.6666);//addmiutes(200 * -5)
             var result = _client.RegisterClient().UsdPerpetualApi.ExchangeData.GetKlinesAsync(
                 symbol,
@@ -57,7 +59,9 @@ namespace ByBit_Exchange_API
             int count = results.Count();
             var last = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 3);
-
+            
+            //var balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0);
+            //decimal qtty = balance.FirstOrDefault<BybitBalance>("USDT").AvailableBalance;
             //buy signal 
             if (last2.LowerBand == null && last.UpperBand == null)
             {
@@ -65,7 +69,8 @@ namespace ByBit_Exchange_API
                 {
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count -2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.LowerBand.Value) / last.LowerBand.Value);
                     await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: quantity, false);
-                    Console.WriteLine("sell     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
+                    SendEmail email = new SendEmail(toEmailAddress, "buy position opend", DateTime.Now.ToString() + "\n buy \n stop loss =" + last.LowerBand.ToString() + "take profit = " + tp);
+                    Console.WriteLine("buy     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
                 }
 
             }
@@ -76,16 +81,23 @@ namespace ByBit_Exchange_API
                 {
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.UpperBand.Value) / last.UpperBand.Value);
                     await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:quantity, false);
-                    Console.WriteLine("buy      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);
+                    SendEmail email = new SendEmail(toEmailAddress, "sell position opend", DateTime.Now.ToString() + "\n sell \n stop loss =" + last.UpperBand.ToString() + "take profit = " + tp);
+                    Console.WriteLine("sell      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);
                 }
             }
             else
                 Console.WriteLine("do nothing");
+            string s = "";
+
             foreach (SuperTrendResult n in results)
             {
-                File.WriteAllText("C:\\Users\\MAXELL\\Desktop\\output.json", n.SuperTrend.ToString());
-
+                s += n.Date.ToString() + "       "
+                    + "lowerband    " + n.LowerBand.ToString() +"       "
+                    + "uperband     " + n.UpperBand.ToString() + "       "
+                    + "\n";
             }
+            File.WriteAllText("C:\\Users\\MAXELL\\Desktop\\output.json", s);
+
             return results;
         }
 

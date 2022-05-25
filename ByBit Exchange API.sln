@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ByBit Exchange API", "ByBit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Quartz.net", "Quartz.net\Quartz.net.csproj", "{40C8B32F-C69E-479D-B6D4-697ABFF72592}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailService", "EmailService\EmailService.csproj", "{62078605-2EC4-41DF-80E3-6B3B5E58A60E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,23 +23,15 @@ Global
 		{40C8B32F-C69E-479D-B6D4-697ABFF72592}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C8B32F-C69E-479D-B6D4-697ABFF72592}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C8B32F-C69E-479D-B6D4-697ABFF72592}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62078605-2EC4-41DF-80E3-6B3B5E58A60E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62078605-2EC4-41DF-80E3-6B3B5E58A60E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62078605-2EC4-41DF-80E3-6B3B5E58A60E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62078605-2EC4-41DF-80E3-6B3B5E58A60E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E671712-E43B-4EDC-BABD-384BCD70E779}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://dev.azure.com/alibw
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = ByBit\u0020Exchange\u0020API\\ByBit\u0020Exchange\u0020API.csproj
-		SccProjectName1 = ByBit\u0020Exchange\u0020API
-		SccLocalPath1 = ByBit\u0020Exchange\u0020API
-		SccProjectUniqueName2 = Quartz.net\\Quartz.net.csproj
-		SccProjectName2 = Quartz.net
-		SccLocalPath2 = Quartz.net
 	EndGlobalSection
 EndGlobal

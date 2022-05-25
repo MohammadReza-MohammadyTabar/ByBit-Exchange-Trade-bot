@@ -16,7 +16,6 @@
     <PackageReference Include="Autofac" Version="6.3.0" />
     <PackageReference Include="Bybit.Net" Version="1.0.0" />
     <PackageReference Include="CryptoExchange.Net" Version="5.1.7" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.8" />
     <PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
     <PackageReference Include="Skender.Stock.Indicators" Version="1.23.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
@@ -25,6 +24,10 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EmailService\EmailService.csproj" />
   </ItemGroup>
 
 </Project>

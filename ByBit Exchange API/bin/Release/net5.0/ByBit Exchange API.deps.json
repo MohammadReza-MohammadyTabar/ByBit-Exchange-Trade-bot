@@ -36,6 +36,7 @@
           "Autofac": "6.3.0",
           "Bybit.Net": "1.0.0",
           "CryptoExchange.Net": "5.1.7",
+          "EmailService": "1.0.0",
           "Serilog.AspNetCore": "5.0.0",
           "Skender.Stock.Indicators": "1.23.0",
           "Swashbuckle.AspNetCore": "5.6.3",
@@ -667,6 +668,14 @@
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {},
       "System.Text.Json/4.6.0": {},
+      "EmailService/1.0.0": {
+        "runtime": {
+          "EmailService.dll": {}
+        },
+        "compile": {
+          "EmailService.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2617,6 +2626,11 @@
       "sha512": "sha512-4F8Xe+JIkVoDJ8hDAZ7HqLkjctN/6WItJIzQaifBwClC7wmoLSda/Sv2i6i1kycqDb3hWF4JCVbpAweyOKHEUA==",
       "path": "system.text.json/4.6.0",
       "hashPath": "system.text.json.4.6.0.nupkg.sha512"
+    },
+    "EmailService/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
