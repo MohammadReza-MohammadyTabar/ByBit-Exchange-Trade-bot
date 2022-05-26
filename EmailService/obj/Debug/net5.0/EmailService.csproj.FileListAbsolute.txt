@@ -9,3 +9,4 @@ C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.csproj.CoreComp
 C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.dll
 C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\ref\EmailService.dll
 C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.pdb
+C:\ByBit-Exchange-API\EmailService\obj\Debug\net5.0\EmailService.csproj.AssemblyReference.cache
