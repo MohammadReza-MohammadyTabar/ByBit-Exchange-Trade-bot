@@ -18,8 +18,8 @@ namespace ByBit_Exchange_API
         private static PlaceOrderController _placeOrderController;
         private static IGetAccountData _getAccountData;
         private static IClosePositions _closePositions;
-        private string toEmailAddress = "mohammady444@gmail.com";
-
+        private string toEmailAddress = Settings.items.toEmailAddress;
+        private decimal lavrage = Settings.items.lagvrage;
 
         public getKline(IByBitClient bybitClient,IPlaceOrder placeOrder, PlaceOrderController placeOrderController,IGetAccountData getAccountData,IClosePositions closePositions)
         {
@@ -55,7 +55,7 @@ namespace ByBit_Exchange_API
                 };
                 quotes.Add(q);
             }
-            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(12, 1.5);
+            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(Settings.items.STlookbackPeriods, Settings.items.STperiod);
             int count = results.Count();
             var last = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 3);
@@ -67,7 +67,7 @@ namespace ByBit_Exchange_API
 
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count -2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.LowerBand.Value) / last.LowerBand.Value);
                     decimal balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance;
-                    decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice;
+                    decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice*lavrage;
                     var place=await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: qtty.WithDecimalDigitsOf(0), false);
                     SendEmail email = new SendEmail(toEmailAddress, "buy position opend", DateTime.Now.ToString() + "\n buy \n stop loss =" + last.LowerBand.ToString() + "\ntake profit = " + tp+"\nquantity = "+qtty.WithDecimalDigitsOf(0)+"\nOrder Price = "+place.Data.Price+"\nBlance = "+balance);
                     Console.WriteLine("buy     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
@@ -81,7 +81,7 @@ namespace ByBit_Exchange_API
                 {
                     decimal tp = kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice + kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice * ((kline.ElementAtOrDefault<BybitKline>(count - 2).ClosePrice - last.UpperBand.Value) / last.UpperBand.Value);
                     decimal balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance;
-                    decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice;
+                    decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice*lavrage;
                     var place=await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:qtty.WithDecimalDigitsOf(0), false);
                     SendEmail email = new SendEmail(toEmailAddress, "sell position opend", DateTime.Now.ToString() + "\n sell \n stop loss =" + last.UpperBand.ToString() + "\ntake profit = " + tp + "\nquantity = " + qtty.WithDecimalDigitsOf(0) + "\nOrder Price = " + place.Data.Price + "\nBlance = " +balance);
                     Console.WriteLine("sell      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);

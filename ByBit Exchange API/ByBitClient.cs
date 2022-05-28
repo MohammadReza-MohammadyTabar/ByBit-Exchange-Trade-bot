@@ -14,8 +14,8 @@ namespace ByBit_Exchange_API
 {
     public class ByBitClient : IByBitClient
     {
-        public string apikey = "dagSvirf2AFbCkdNss";
-        public string apisecret = "FQek49qT0ETbqJxMYSCGEUmxk3WOBqFnnpdE";
+        public string apikey = Settings.items.apikey;
+        public string apisecret = Settings.items.apisecret;
         public BybitClient RegisterClient()
         {
             BybitClient.SetDefaultOptions(new BybitClientOptions

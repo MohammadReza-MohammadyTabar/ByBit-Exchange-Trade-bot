@@ -1,9 +1,7 @@
 using Autofac;
-using ByBit_Exchange_API.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 using Serilog;
-
 
 namespace ByBit_Exchange_API
 {
@@ -16,7 +14,7 @@ namespace ByBit_Exchange_API
             .MinimumLevel.Debug()
             .WriteTo.Console()
             .CreateLogger();
-
+            
             //var builder = new ContainerBuilder();
             //builder.RegisterType<getKline>().As<IGetKline>();
             //container = builder.Build();
@@ -32,4 +30,6 @@ namespace ByBit_Exchange_API
                 });
 
     }
+
+    
 }

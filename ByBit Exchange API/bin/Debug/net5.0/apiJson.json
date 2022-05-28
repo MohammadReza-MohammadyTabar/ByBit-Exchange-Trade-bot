@@ -1,0 +1,9 @@
+    { 
+      "port": "5000", 
+      "lagvrage": "10", 
+      "STlookbackPeriods": "12",
+      "STperiod":"1.5",
+      "toEmailAddress":"mohammady444@gmail.com",
+      "apikey":"dagSvirf2AFbCkdNss",
+      "apisecret":"FQek49qT0ETbqJxMYSCGEUmxk3WOBqFnnpdE"
+     }

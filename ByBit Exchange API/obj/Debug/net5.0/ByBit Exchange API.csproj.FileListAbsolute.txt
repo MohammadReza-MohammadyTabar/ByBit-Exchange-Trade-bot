@@ -197,3 +197,4 @@ C:\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.pdb
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Debug\net5.0\ByBit Exchange API.genruntimeconfig.cache
 C:\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\EmailService.dll
 C:\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\EmailService.pdb
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Debug\net5.0\apiJson.json

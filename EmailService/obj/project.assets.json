@@ -1,8 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {},
-    "net5.0/win-x86": {}
+    "net5.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
@@ -81,11 +80,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.407\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x86": {
-        "#import": []
       }
     }
   }
