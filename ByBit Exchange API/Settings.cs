@@ -18,7 +18,7 @@ namespace ByBit_Exchange_API
         public string port;
         public decimal lagvrage;
         public int STlookbackPeriods;
-        public double STperiod;
+        public double STmultiplier;
         public string toEmailAddress;
         public string apikey;
         public string apisecret;

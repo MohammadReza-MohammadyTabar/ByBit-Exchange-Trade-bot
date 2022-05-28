@@ -4,7 +4,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <_PublishTargetUrl>C:\Users\MAXELL\Desktop\api</_PublishTargetUrl>
-    <History>True|2022-05-28T08:23:06.4336734Z;True|2022-05-26T17:54:50.1974862+04:30;</History>
+    <_PublishTargetUrl>C:\Users\MAXELL\Desktop\apiWin86x</_PublishTargetUrl>
+    <History>True|2022-05-28T15:25:46.1627034Z;True|2022-05-28T19:53:32.0126808+04:30;True|2022-05-28T17:57:05.5855766+04:30;True|2022-05-28T17:37:03.5187601+04:30;True|2022-05-28T12:53:06.4336734+04:30;True|2022-05-26T17:54:50.1974862+04:30;</History>
   </PropertyGroup>
 </Project>

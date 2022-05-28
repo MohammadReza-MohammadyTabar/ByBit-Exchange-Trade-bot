@@ -55,7 +55,7 @@ namespace ByBit_Exchange_API
                 };
                 quotes.Add(q);
             }
-            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(Settings.items.STlookbackPeriods, Settings.items.STperiod);
+            IEnumerable<SuperTrendResult> results = quotes.GetSuperTrend(Settings.items.STlookbackPeriods, Settings.items.STmultiplier);
             int count = results.Count();
             var last = results.ElementAtOrDefault<SuperTrendResult>(count - 2);
             var last2 = results.ElementAtOrDefault<SuperTrendResult>(count - 3);
@@ -69,7 +69,7 @@ namespace ByBit_Exchange_API
                     decimal balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance;
                     decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice*lavrage;
                     var place=await _placeOrder.placeOrderAsync(symbol, true, last.LowerBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity: qtty.WithDecimalDigitsOf(0), false);
-                    SendEmail email = new SendEmail(toEmailAddress, "buy position opend", DateTime.Now.ToString() + "\n buy \n stop loss =" + last.LowerBand.ToString() + "\ntake profit = " + tp+"\nquantity = "+qtty.WithDecimalDigitsOf(0)+"\nOrder Price = "+place.Data.Price+"\nBlance = "+balance);
+                    SendEmail email = new SendEmail(toEmailAddress, "buy position opend", DateTime.Now.ToString() + "\n buy \n stop loss =" + last.LowerBand.ToString() + "\ntake profit = " + tp+"\nquantity = "+qtty.WithDecimalDigitsOf(0)+"\nOrder Price = "+place.Data.Price+"\nBlance = "+balance+"\nlavrage = "+Settings.items.lagvrage+"\nsuper trends lookback periods = "+Settings.items.STlookbackPeriods+"\nsuper trnds multipier = "+Settings.items.STmultiplier);
                     Console.WriteLine("buy     stop loss = " + last.LowerBand.ToString() + "take profit = " + tp);
                 }
 
@@ -83,7 +83,7 @@ namespace ByBit_Exchange_API
                     decimal balance = _getAccountData.getBalanceAsync().Result.Data.Values.FirstOrDefault<BybitBalance>(m => m.AvailableBalance != 0).AvailableBalance;
                     decimal qtty = balance * quantityPercent / kline.LastOrDefault<BybitKline>().ClosePrice*lavrage;
                     var place=await _placeOrder.placeOrderAsync(symbol, false, last.UpperBand.Value.WithDecimalDigitsOf(3), tp.WithDecimalDigitsOf(3), quantity:qtty.WithDecimalDigitsOf(0), false);
-                    SendEmail email = new SendEmail(toEmailAddress, "sell position opend", DateTime.Now.ToString() + "\n sell \n stop loss =" + last.UpperBand.ToString() + "\ntake profit = " + tp + "\nquantity = " + qtty.WithDecimalDigitsOf(0) + "\nOrder Price = " + place.Data.Price + "\nBlance = " +balance);
+                    SendEmail email = new SendEmail(toEmailAddress, "sell position opend", DateTime.Now.ToString() + "\n sell \n stop loss =" + last.UpperBand.ToString() + "\ntake profit = " + tp + "\nquantity = " + qtty.WithDecimalDigitsOf(0) + "\nOrder Price = " + place.Data.Price + "\nBlance = " +balance+"\nlavrage = "+Settings.items.lagvrage+"\nsuper trends lookback periods = "+Settings.items.STlookbackPeriods+"\nsuper trnds multipier = "+Settings.items.STmultiplier);
                     Console.WriteLine("sell      stop loss = " + last.UpperBand.ToString() + "take profit = " + tp);
                 }
             }

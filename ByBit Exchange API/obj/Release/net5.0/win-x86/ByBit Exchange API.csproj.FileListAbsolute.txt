@@ -396,3 +396,4 @@ C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\ByBit Exchan
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\ref\ByBit Exchange API.dll
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\ByBit Exchange API.pdb
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\ByBit Exchange API.genruntimeconfig.cache
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\win-x86\apiJson.json

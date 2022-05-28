@@ -1,4 +1,5 @@
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\PubTmp\Out\ByBit Exchange API.exe
+C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\PubTmp\Out\apiJson.json
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\PubTmp\Out\appsettings.Development.json
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\PubTmp\Out\appsettings.json
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\win-x86\PubTmp\Out\ByBit Exchange API.dll

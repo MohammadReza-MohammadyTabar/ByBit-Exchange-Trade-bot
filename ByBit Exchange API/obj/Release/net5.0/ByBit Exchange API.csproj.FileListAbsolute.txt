@@ -88,3 +88,4 @@ C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.p
 C:\ByBit-Exchange-API\ByBit Exchange API\obj\Release\net5.0\ByBit Exchange API.genruntimeconfig.cache
 C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\EmailService.dll
 C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\EmailService.pdb
+C:\ByBit-Exchange-API\ByBit Exchange API\bin\Release\net5.0\apiJson.json
